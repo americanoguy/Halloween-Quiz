@@ -1,0 +1,175 @@
+@font-face {
+    font-family: Creepster;
+    src: url(Creepster/Creepster-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    background: linear-gradient(orange, orangered);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-family: Creepster;
+    font-size: 4em;
+    text-align: center;
+    font-weight: 100;
+}
+.option {
+    width: 500px;
+  display: flex;
+  align-items: center;
+  background: #2e0000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin: 5px auto;
+  cursor: pointer;
+  width: 50vw;
+}
+
+.option input {
+  display: none;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid green;
+  margin-right: 10px;
+}
+
+.option input:checked + .dot {
+  background:orangered;
+}
+
+p{
+    font-size: 2em;
+    font-family:Creepster;
+    text-align: center;
+}
+label {
+  background-color: #2b0000;
+  padding: 15px 20px;
+  width: 60vw;
+  display: block;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1em;
+  margin: 10px auto ;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s ease;
+}
+.dot{
+    background-color: green;
+}
+
+label:hover{
+    background-color: orangered;
+    color: #2b0000;
+    transform: scale(1.1);
+}
+.text{
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ #loading{
+    font-family: Creepster;
+    font-size: 1.5em;
+    text-align: center;
+    width: fit-content;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    margin: 60px auto;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .loader-circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-top: 8px solid green;
+    border-right: 8px solid rgb(199, 65, 16);
+    animation: spin 1.5s linear infinite;
+ }
+ @keyframes spin {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+ }
+ .hidden {
+  display: none !important; 
+}
+#suallarigonderbtn {
+    background-color: rgb(1, 66, 1);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 3em;
+    margin: 20px auto; 
+    display: block; 
+    text-align: center;
+    box-shadow: 0 0 20px rgb(1, 66, 1);
+    transition: all 0.5s;
+}
+#suallarigonderbtn:hover{
+    transform: scale(1.1);
+}
+#result{
+    font-size: 5em;
+    text-align: center;
+    font-family:Creepster;
+}
+#vaxt{
+    background-color: #2b0000;
+    color: white;
+    position: absolute;
+    width: 10vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: Creepster;
+    justify-content: center;
+    opacity: 0.5;
+    font-size: 1.5em;
+    border-radius: 20px;
+    position: fixed;
+    top: 1vh;
+    left: 80vw;
+    height: 10vw;
+}
+#youdied{
+    background-image: url(img/screammask.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 300px;
+    border-radius: 10px;
+    padding-left: 100px;
+    color: red;
+    padding-right: 100px;
+}
+#youescaped{
+    background-image: url(https://media.istockphoto.com/id/1368454871/photo/glowing-exit-sign-by-night-on-wall.jpg?s=612x612&w=0&k=20&c=NdD61QaxAsE5RId1GbLuWO7DkPir0JI0bMxe7b04GYE=);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding-bottom: 370px;
+    padding-left: 100px;
+    color: red;
+    padding-right: 100px;
+}
