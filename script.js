@@ -94,13 +94,22 @@ suallarigonderbtn.onclick = function () {
   suallarigonderbtn.style.display = "none";
 
   loading.classList.remove("hidden");
+
+
+  const failaudio = document.getElementById("failaudio");
+  const escapeaudio= document.getElementById("escapeaudio");
+
+
   setTimeout(function () {
     loading.classList.add("hidden");
     result.classList.remove("hidden");
     if(xal<5){
-       result.innerHTML = `You got ${xal} / ${suallar.length} correct! <br> <span id="youdied">You died</span>`;
+       result.innerHTML = `<h3 id="dead">You got ${xal} / ${suallar.length} correct! <br> <span id="youdied">You died</span></h3>`;
+       failaudio.play();
     }else{
-      result.innerHTML = `You got ${xal} / ${suallar.length} correct! <br> <span id="youescaped">You escaped</span>`;
+      result.innerHTML = `<h3 id="live">You got ${xal} / ${suallar.length} correct! <br> <span id="youescaped">You escaped</span></h3>`;
+      escapeaudio.play();
+
     }
   }, 2000);
 };
