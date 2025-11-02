@@ -233,6 +233,10 @@ label:hover{
 
 }
 
+#mode-selector button{
+    width: 10vw;
+}
+
 
 #geographymode{
     background-image: url(https://static.vecteezy.com/system/resources/previews/034/211/767/non_2x/world-map-illustration-green-land-with-blue-sea-as-background-vector.jpg);
@@ -248,9 +252,42 @@ label:hover{
     color: brown;
     border: none;
     border-radius: 15px;
-
-
 }
+
+#historymode{
+    background-image: url(img/historybtn.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    font-weight: 500;
+
+    padding: 1vw;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    border: none;
+    border-radius: 15px;
+}
+#moviemode{
+    background-image: url(img/moviewallpaper.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    font-weight: 500;
+
+    padding: 1vw;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+
 @media(max-width:1200px){
     .option{
         font-size: 1em;
@@ -283,6 +320,9 @@ label:hover{
     padding-bottom: 40vh; 
     padding-left: 25vw;
     padding-right: 25vw;
+}
+#mode-selector button{
+    width: 25vw;
 }
 }
 
@@ -322,6 +362,9 @@ label:hover{
     padding-left: 25vw;
     padding-right: 25vw;
 }
+#mode-selector button{
+    width: 35vw;
+}
 }
 
 @media(max-width:768px){
@@ -356,6 +399,9 @@ label:hover{
     padding-bottom: 40vh; 
     padding-left: 25vw;
     padding-right: 25vw;
+}
+#mode-selector button{
+    width: 35vw;
 }
 }
 
@@ -393,6 +439,9 @@ label:hover{
     padding-left: 25vw;
     padding-right: 25vw;
 }
+#mode-selector button{
+    width: 35vw;
+}
 }
 
 
@@ -429,6 +478,9 @@ label:hover{
     padding-left: 25vw;
     padding-right: 25vw;
 }
+#mode-selector button{
+    width: 35vw;
+}
 }
 
 @media(max-width:575px){
@@ -450,7 +502,7 @@ label:hover{
     }
     #vaxt{
         font-size: 0.7em !important;
-        width: 14vw !important;
+        width: 12vw !important;
         height: 9vh !important;
         padding: 2vw;
     }
@@ -463,6 +515,9 @@ label:hover{
     padding-bottom: 40vh; 
     padding-left: 25vw;
     padding-right: 25vw;
+}
+#mode-selector button{
+    width: 35vw;
 }
 }
 
@@ -485,7 +540,7 @@ label:hover{
     }
     #vaxt{
         font-size: 0.7em !important;
-        width: 14vw !important;
+        width: 12vw !important;
         height: 9vh !important;
         padding: 2vw;
     }
@@ -498,6 +553,9 @@ label:hover{
     padding-bottom: 40vh; 
     padding-left: 25vw;
     padding-right: 25vw;
+}
+#mode-selector button{
+    width: 35vw;
 }
 }
 
@@ -522,7 +580,7 @@ label:hover{
     }
     #vaxt{
         font-size: 0.7em !important;
-        width: 14vw !important;
+        width: 12vw !important;
         height: 9vh !important;
         padding: 2vw;
     }
@@ -535,6 +593,9 @@ label:hover{
     padding-bottom: 40vh; 
     padding-left: 25vw;
     padding-right: 25vw;
+}
+#mode-selector button{
+    width: 35vw;
 }
 }
 
@@ -559,7 +620,8 @@ label:hover{
     #vaxt{
         font-size: 0.7em !important;
         width: 14vw !important;
-        height: 6vh !important;
+        margin-left: 1vw;
+        height: 5vh !important;
         padding: 2vw;
     }
      #result{
@@ -571,6 +633,9 @@ label:hover{
     padding-bottom: 40vh; 
     padding-left: 25vw;
     padding-right: 25vw;
+}
+#mode-selector button{
+    width: 35vw;
 }
 }
 
@@ -594,8 +659,9 @@ label:hover{
     }
     #vaxt{
         font-size: 0.7em !important;
-        width: 14vw !important;
+        width: 1vw !important;
         height: 7vh !important;
+        margin-left: 1vw;
         padding: 2vw;
     }
      #result{
@@ -607,6 +673,9 @@ label:hover{
     padding-bottom: 40vh; 
     padding-left: 25vw;
     padding-right: 25vw;
+}
+#mode-selector button{
+    width: 35vw;
 }
 }
 
@@ -630,6 +699,7 @@ label:hover{
     #vaxt{
         font-size: 0.7em !important;
         width: 14vw !important;
+        margin-left: 1vw;
         height: 9vh !important;
         padding: 2vw;
     }
@@ -642,6 +712,9 @@ label:hover{
     padding-bottom: 40vh; 
     padding-left: 25vw;
     padding-right: 25vw;
+}
+#mode-selector button{
+    width: 35vw;
 }
 }
 
@@ -666,7 +739,8 @@ label:hover{
     #vaxt{
         font-size: 0.7em !important;
         width: 14vw !important;
-        height: 9vh !important;
+        margin-left: 1vw;
+        height: 5vh !important;
         padding: 2vw;
     }
     #result{
@@ -678,5 +752,8 @@ label:hover{
     padding-bottom: 40vh; 
     padding-left: 25vw;
     padding-right: 25vw;
+}
+#mode-selector button{
+    width: 35vw;
 }
 }
