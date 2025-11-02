@@ -12,6 +12,14 @@
     />
   </head>
   <body>
+    <div id="mode-selector">
+      <button id="halloweenmode" onclick="setMode('halloween')">
+        Halloween Mode
+      </button>
+      <button id="geographymode" onclick="setMode('geography')">
+        Geography Mode
+      </button>
+    </div>
     <div class="quiz-container">
       <h1>Halloween Quiz</h1>
       <div id="vaxt"></div>
@@ -21,7 +29,7 @@
 
       <div id="loading" class="hidden">
         <div class="loader-circle"></div>
-        <span>Checking answers...</span>
+        <span id="loadtext">Checking answers...</span>
       </div>
 
       <div id="result" class="hidden"></div>
@@ -31,6 +39,8 @@
       id="escapeaudio"
       src="songs/gta-san-andreas-mission-complete-sound-hq.mp3"
     ></audio>
+    <audio id="fail" src="songs/sound-fail-fallo.mp3"></audio>
+    <audio id="clap" src="songs/celebration-sound-effect (1).mp3"></audio>
 
     <script src="script.js"></script>
   </body>
